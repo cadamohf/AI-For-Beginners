@@ -16,13 +16,6 @@ jobs:
       checks: none
     if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
     runs-on: ubuntu-latest
-    permissions:
-      actions: read
-      contents: read
-      deployments: read
-      packages: none
-      pull-requests: write
-      security-events: write
     name: Build and Deploy Job
     steps:
       - uses: actions/checkout@v2
