@@ -29,7 +29,6 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: "upload"
           app_location: "etc/quiz-app"
-          api_location: ""
           output_location: "dist"
           app_build_command: "npm install && npm run build"
 
